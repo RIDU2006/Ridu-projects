@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Navigation */
+      nav {
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 20px;
+      }
+
+      nav a {
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+      }
+
+      nav a:hover {
+        background-color: #555;
+        border-radius: 5px;
+      }
+
+      /* Main Section */
+      section {
+        padding: 100px 20px;
+        margin-top: 80px;
+      }
+
+      /* About Section */
+      #about {
+        background-color: white;
+        text-align: center;
+        padding: 50px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #about h1 {
+        color: #333;
+      }
+
+      #about p {
+        color: #666;
+      }
+
+      /* Projects Section */
+      #projects {
+        background-color: #f9f9f9;
+      }
+
+      #projects .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .project {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .project h3 {
+        color: #333;
+      }
+
+      .project p {
+        color: #555;
+      }
+
+      /* Contact Section */
+      #contact {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #contact p {
+        color: #666;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 50px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav ul li {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+      <h1>Hello, I'm RIDUVARSHINI I M</h1>
+      <p>
+        I'm a passionate web developer with a love for creating user-friendly
+        websites. I specialize in front-end development and enjoy experimenting
+        with new technologies.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Airline Reservation System</h3>
+          <p>
+            The Airline Reservation System is a web-based platform that allows
+            users to book flights, check availability, and manage reservations.
+            It integrates payment systems for ticket purchases and offers
+            real-time updates on flight schedules. Admins can manage bookings,
+            cancellations, and view detailed reports of the flight operations.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Hostel Management System</h3>
+          <p>
+            The Hostel Management System streamlines the process of room
+            allocation, bookings, and payments for hostel administration. It
+            allows students to check available rooms, book accommodations, and
+            manage their stay. Admins can track room occupancy, manage fees, and
+            generate reports on student occupancy and payment status.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Fire Detection System</h3>
+          <p>
+            The Fire Detection System utilizes sensors to monitor temperature
+            and smoke levels in real-time, triggering alarms in case of fire
+            hazards. It provides automatic alerts to local authorities or fire
+            departments, helping to mitigate risks and prevent fire-related
+            disasters. The system is designed to ensure early detection and
+            faster response in critical environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email:star2006ridu@gmail.com</p>
+      <p>
+        Feel free to reach out for collaborations or freelance opportunities!
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 RIDUVARSHINI I M. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
